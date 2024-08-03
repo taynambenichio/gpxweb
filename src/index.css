@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Phenomena";
+    font-style: normal;
+    font-weight: 100;
+    src: url("assets/fonts/Phenomena-Thin.otf") format("opentype");
+    font-display: Arial;
+  }
+
+  @font-face {
+    font-family: "Phenomena";
+    font-style: normal;
+    font-weight: 300;
+    src: url("assets/fonts/Phenomena-Light.otf") format("opentype");
+    font-display: Arial;
+  }
+
+  @font-face {
+    font-family: "Phenomena";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/Phenomena-Regular.otf") format("opentype");
+    font-display: Arial;
+  }
+
+  @font-face {
+    font-family: "Phenomena";
+    font-style: normal;
+    font-weight: 700;
+    src: url("assets/fonts/Phenomena-Bold.otf") format("opentype");
+    font-display: Arial;
+  }
+}
+
+:root {
+  --font: "Phenomena", sans-serif;
+}
+
+html,
+body {
+  font-family: var(--font);
+  background-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
